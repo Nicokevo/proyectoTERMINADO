@@ -73,7 +73,7 @@ h1 {
 }
 
 button.btn.btn-danger {
-  align-items: center !important;
+  align-items: center;
   background-color: rgb(0, 0, 0);
   color: rgb(255, 11, 11);
 }
