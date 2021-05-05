@@ -1,0 +1,58 @@
+@mixin flexrow {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin button {
+  border-radius: 0px;
+  width: 40%;
+}
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin SeccionesTexto {
+  .SeccionesTexto {
+    align-content: justify;
+    justify-content: center;
+  }
+  .titaño {
+    font-size: 20px;
+    position: relative;
+    width: 300px;
+    height: 188px;
+    text-align: center;
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 260.69%;
+    /* or 33px */
+
+    color: #03ff3b;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .TextoQuienesSomos {
+    font-size: 18px;
+  }
+  .TextoPoliticas {
+    font-size: 18px;
+  }
+  h2 {
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  p {
+    text-align: justify;
+    flex-wrap: wrap;
+  }
+}

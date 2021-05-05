@@ -1,0 +1,188 @@
+@charset "UTF-8";
+.container {
+  text-align: center;
+  font-family: "Alegreya", sans-serif;
+  color: #ffffff;
+  background-color: black;
+}
+
+.menubuttons {
+  border-radius: 0px;
+  width: 40%;
+}
+
+.menubuttons :hover {
+  background-color: #3b3a3a;
+  border-radius: 30px;
+}
+
+.menubuttons a {
+  color: white;
+}
+
+.NicoDropdown {
+  margin-left: 5%;
+}
+
+.NicoDropdown a {
+  color: #f8f8f8;
+}
+
+.NicoDropdown a :hover {
+  background-color: #3b3a3a;
+}
+
+.NicoDropdownItems :active {
+  background-color: white;
+}
+
+.NicoDropdownItems :hover {
+  background-color: #3b3a3a;
+}
+
+.NicoDropdownItems a {
+  color: black;
+}
+
+.NicoDropdownItems a :hover {
+  background-color: white;
+}
+
+.NicoDropdownItems a :active {
+  background-color: black;
+}
+
+.menuContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 10px;
+}
+
+.SeccionPoliticas,
+.SeccionNosotros {
+  background-color: black;
+}
+
+body {
+  background-color: black;
+}
+
+img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 10px 0px 10px 10px;
+}
+
+.Secciones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.SeccionesTexto .SeccionesTexto {
+  -ms-flex-line-pack: justify;
+      align-content: justify;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.SeccionesTexto .titaño {
+  font-size: 20px;
+  position: relative;
+  width: 300px;
+  height: 188px;
+  text-align: center;
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 260.69%;
+  /* or 33px */
+  color: #03ff3b;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.SeccionesTexto .TextoQuienesSomos {
+  font-size: 18px;
+}
+
+.SeccionesTexto .TextoPoliticas {
+  font-size: 18px;
+}
+
+.SeccionesTexto h2 {
+  text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.SeccionesTexto p {
+  text-align: justify;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.NicoCarrusel {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  border: 0px;
+}
+
+.carouselContainer {
+  padding: 0px;
+  padding-left: 0px;
+}
+
+.containerNopadding {
+  padding: 0px;
+  padding-right: 10px;
+}
+
+/*Media querys*/
+@media (max-width: 800px) {
+  .Secciones {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+/*texto informativo alado del carusel */
+.titaño {
+  position: relative;
+  width: 300px;
+  height: 188px;
+  text-align: center;
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 260.69%;
+  /* or 33px */
+  color: #03ff3b;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/*# sourceMappingURL=style.css.map */
