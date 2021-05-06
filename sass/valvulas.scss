@@ -1,6 +1,59 @@
 /*# sourceMappingURL=valvula.css.map */
+body {
+  margin: 0;
+  font-family: var(--bs-font-sans-serif);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #fdfdfd;
+  background-color: rgb(10, 10, 10);
+  background-image: url(/utils/more);
+}
 
 img {
   width: 400px;
   top: 20px;
+}
+
+.navbar-collapse {
+  flex-basis: 100%;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.text-primary {
+  color: #ff0505 !important;
+}
+
+.bg-dark {
+  background-color: #000000 !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: aliceblue;
+}
+
+.card-body {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+.container {
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: rgb(0, 0, 0);
+  background-clip: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  border-radius: 0.25rem;
+  align-items: center;
+  opacity: 0, 9;
+  transition: opacity 0.3s ease;
 }
