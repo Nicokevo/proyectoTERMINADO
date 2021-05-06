@@ -1,3 +1,4 @@
+/* No CSS */ /*# sourceMappingURL=nuevousuario.css.map */
 body {
   background-image: url(../utils/cateterismogif.gif);
 }
@@ -59,17 +60,17 @@ body {
   text-transform: capitalize;
 }
 /* .submit-btn {
-    display: inline-block;
-    background-image: linear-gradiente(red, #a72879, #064497);
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 16px;
-    padding: 8px 16px;
-    border: none;
-    width: 200px;
-    cursor: pointer;
-  } */
+      display: inline-block;
+      background-image: linear-gradiente(red, #a72879, #064497);
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 16px;
+      padding: 8px 16px;
+      border: none;
+      width: 200px;
+      cursor: pointer;
+    } */
 .contact-form .submit-btn {
   display: inline-block;
   width: 200px;

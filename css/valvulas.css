@@ -5,68 +5,153 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #fdfdfd;
-  background-color: #0a0a0a;
-  background-image: url(/utils/more);
+  background-color: #050505;
 }
 
-img {
-  width: 400px;
-  top: 20px;
-}
-
-.navbar-collapse {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
+/*header*/
 .text-primary {
   color: #ff0505 !important;
 }
 
+container-fluid {
+  margin: 30px;
+}
+
 .bg-dark {
-  background-color: #000000 !important;
+  background-color: black !important;
 }
 
 .navbar-dark .navbar-nav .nav-link {
   color: aliceblue;
 }
 
-.card-body {
-  background-color: black;
-  color: white;
-}
-
-.container {
-  margin-top: 10px;
-  padding: 10px;
-}
-
-.card {
-  position: relative;
+/*Procedimientos*/
+.Procedimientos_imagenes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .Procedimientos_imagenes {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .Procedimientos_imagenes {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.Procedimientos_imagenes img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.Procedimientos h1 {
+  margin: 4rem auto 2rem;
+  color: white;
+}
+
+.Procedimientos__subtitulo {
+  color: var(--ColorPrimarioTexto);
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 2rem 1rem;
+  text-align: center;
+  color: #f9ffff;
+}
+
+.Procedimientos__imagen {
+  width: 40rem;
+  height: 60rem;
+  margin-top: 4rem;
+  padding: 2rem;
+  border-radius: 2rem;
   background-color: black;
-  background-clip: border-box;
-  border: 1px solid rgba(255, 255, 255, 0.125);
-  border-radius: 0.25rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  opacity: 0, 9;
-  -webkit-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
+  -webkit-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.75);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  /*para dar efecto escalable*/
+}
+
+.Procedimientos__imagen:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  /*para dar efecto escalable*/
+  -webkit-box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.75);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+@media (min-width: 1025px) and (max-width: 1400px) {
+  .Procedimientos__imagen {
+    width: 40rem;
+    height: 60rem;
+    margin: 4rem 2rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    background-color: var();
+    -webkit-box-shadow: 0px 0px 2px 0.3px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px 0px 2px 0.3px rgba(0, 0, 0, 0.75);
+  }
+  .Procedimientos__imagen:hover {
+    -webkit-box-shadow: 0px 0px 2px 0.3px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px 0px 2px 0.3px rgba(0, 0, 0, 0.75);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .Procedimientos__imagen {
+    width: 92%;
+    margin: 1rem auto;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .Procedimientos__imagen {
+    width: 90%;
+    margin: 1rem auto;
+    -webkit-box-shadow: 0px 0px 2px 0.3px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px 0px 2px 0.3px rgba(0, 0, 0, 0.75);
+  }
+  .Procedimientos__imagen:hover {
+    -webkit-box-shadow: 0px 0px 2px 0.3px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px 0px 2px 0.3px rgba(0, 0, 0, 0.75);
+  }
+  .Procedimientos h1 {
+    margin-top: 1rem;
+  }
+}
+
+.Procedimientos__imagen p {
+  text-align: center;
+  font-weight: normal;
+  line-height: 1.5;
+  margin: 1.4rem auto;
+}
+
+iframe.ytp-cued-thumbnail-overlay-image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 10px;
+  position: absolute;
 }
 /*# sourceMappingURL=valvulas.css.map */
