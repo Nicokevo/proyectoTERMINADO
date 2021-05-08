@@ -4,6 +4,7 @@ serif;
 $general-background-color: rgb(0, 0, 0);
 $general-letter-color: #ffffff;
 $general-background-buttons: rgb(56, 119, 236);
+$telefono:480px;
 
 body {
     background-color: $general-background-color;
@@ -11,21 +12,27 @@ body {
 
 h1 {
 
-    font-size: 24px;
+    font-size: 60px;
     font-weight: 700;
+    margin-bottom: 25px;
 }
 
 h2 {
 
     text-align: center;
+
+
+    margin-top: 30px;
+
 }
 
 .nav-link {
     display: block;
-    padding: 0.4rem 2rem;
+    padding: 15px;
     font-size: 21px;
     font-family: Roboto;
     color: #fdfffd;
+    margin-bottom: 45px;
 }
 
 a {
@@ -42,7 +49,7 @@ a {
 }
 
 .menubuttons {
-    @include button;
+
 
     :hover {
         background-color: rgb(255, 255, 255);
@@ -58,7 +65,6 @@ a {
 }
 
 .NicoDropdown {
-    margin-left: 5%;
 
     a {
         color: rgb(248, 248, 248);
@@ -93,16 +99,51 @@ a {
 
 .menuContainer {
     width: 100%;
-    display: flex;
+    display: block;
     margin-bottom: 20px;
+    width: 75%;
+    margin: 0 auto;
 
-    ul li {
-        justify-content: space-evenly;
-        align-items: center;
-        flex: 0 0 20%;
-        margin: 0;
+    @media screen {
+        max-width: 768px;
+
+        .menuContainer {
+            width: 95%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+    }
+
+    @media screen {
+        max-width: 1024px;
+
+        .menuContainer {
+            width: 100%;
+            display: flex;
+
+
+            ul li {
+                justify-content: space-evenly;
+                align-items: center;
+
+
+                a {
+                    flex: 0 0 18%;
+                    margin: 0;
+                }
+            }
+        }
+
+
+
     }
 }
+
+
+
+
+
 
 * //carusel//*
 
@@ -125,59 +166,41 @@ img {
     flex-wrap: wrap;
     margin: 10px auto;
 
-    @include telefono {
-        img {
-            display: block;
-            width: 100%;
-        }
+    // @include telefono {
+    //     img {
+    //         display: block;
+    //         width: 98%;
+    //     }
+}
+
+
+
+
+.NicoCarrusel {
+    align-content: center;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    border: 0px;
+}
+
+.carouselContainer {
+    padding: 0px;
+    padding-left: 0px;
+}
+
+.containerNopadding {
+    padding: 0px;
+    padding-right: 10px;
+
+    h1 {
+        margin: 6rem auto 4rem;
+        letter-spacing: 5px;
     }
 
-    .Secciones {
-        @include flex-row;
-    }
+    h2 {
+        letter-spacing: 5px;
+        text-align: center;
 
-    .SeccionesTexto {
-        @include SeccionesTexto;
-
-        img {
-            width: 95%;
-            height: 90%;
-        }
-    }
-
-
-
-    .NicoCarrusel {
-        align-content: center;
-        padding: 0px;
-        margin: 0px;
-        width: 100%;
-        border: 0px;
-    }
-
-    .carouselContainer {
-        padding: 0px;
-        padding-left: 0px;
-    }
-
-    .containerNopadding {
-        padding: 0px;
-        padding-right: 10px;
-
-        h1 {
-            margin: 6rem auto 4rem;
-            letter-spacing: 5px;
-        }
-
-        h2 {
-            letter-spacing: 5px;
-            text-align: center;
-
-            @include telefono {
-                h2 {
-                    text-align: center;
-                }
-            }
-        }
     }
 }

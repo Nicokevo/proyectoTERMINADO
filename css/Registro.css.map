@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,2BAA2B;AAC3B,AAAA,IAAI,CAAC;EACH,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,gBAAgB,EAAE,OAAiB;EACnC,OAAO,EAAE,GAAG;EACZ,MAAM,EAAE,kBAAkB;EAC1B,IAAI,EAAE,CAAC;EACP,WAAW,EAAE,iBAAiB;EAC9B,eAAe,EAAE,KAAK;CACvB;;AAED,AAAA,KAAK,CAAC;EACJ,KAAK,EAAE,KAAK;CACb",
-    "sources": [
-        "../SASS/Registro.scss"
-    ],
-    "names": [],
-    "file": "Registro.css"
-}

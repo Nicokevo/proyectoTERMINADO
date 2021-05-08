@@ -1,13 +1,13 @@
-@mixin telefono {
-  @media (max-width: #{480px}) {
-    @content;
-  }
-}
+// @mixin telefono {
+//   @media (max-width: 480px) {
+//     @content;
+//   }
+// }
 
-@mixin flexrow {
-  display: flex;
-  flex-direction: row;
-}
+// @mixin flexrow {
+//   display: flex;
+//   flex-direction: row;
+// }
 
 @mixin button {
   border-radius: 0px;
@@ -24,42 +24,54 @@
   flex-direction: column;
 }
 
-@mixin SeccionesTexto {
-  .SeccionesTexto {
-    align-content: justify;
-    justify-content: center;
-    margin: 0 auto;
+.secciones {
+  width: 100%;
+
+  @media screen {
+    max-width: 768px;
+
+
+    display: flex;
+    flex: 0 0 45%;
+    flex-direction: row;
   }
 
-  .titaño {
-    font-size: 19px;
-    font-family: Roboto;
-    color: #fdfffd;
-    margin: 0 auto;
-  }
+}
 
-  .nuestrapolitica {
-    font-size: 20px;
-    font-family: Roboto;
-    color: #fdfffd;
-    margin: 0 auto;
-  }
+img {
+  width: 95%;
+  object-fit: cover;
+  object-position: center;
 
-  .TextoQuienesSomos {
-    font-size: 18px;
-  }
 
-  .TextoPoliticas {
-    font-size: 18px;
-  }
+}
 
-  h2 {
-    text-align: center;
-    flex-wrap: wrap;
-  }
 
-  p {
-    text-align: justify;
-    flex-wrap: wrap;
-  }
+.titaño {
+  font-size: 18px;
+  width: 90%;
+  color: #fdfffd;
+  margin-top: 25px;
+  text-align: center;
+  margin: 0 auto;
+
+}
+
+.nuestrapolitica {
+  font-size: 20px;
+  color: #fdfffd;
+
+}
+
+.TextoQuienesSomos {
+  font-size: 18px;
+}
+
+.TextoPoliticas {
+  font-size: 18px;
+}
+
+h2 {
+  text-align: center;
+  flex-wrap: wrap;
 }
