@@ -1,0 +1,137 @@
+/*# sourceMappingURL=valvula.css.map */
+/*variable global */
+* {
+  font-family: $general-font;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #fdfdfd;
+  background-color: rgb(5, 5, 5);
+}
+
+
+
+/*header*/
+.text-primary {
+  color: #ff0505 !important;
+}
+
+container-fluid {
+  margin: 30px;
+}
+
+.bg-dark {
+  background-color: rgb(0, 0, 0) !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: aliceblue;
+}
+
+/*Procedimientos*/
+
+/*cards estan aca */
+
+.Procedimientos {
+  width: auto;
+}
+
+.Procedimientos_imagenes {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Procedimientos_imagenes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.Procedimientos_imagenes {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.Procedimientos_imagenes img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.Procedimientos h1 {
+  margin: 4rem auto 2rem;
+  color: rgb(255, 255, 255);
+}
+
+.Procedimientos__subtitulo {
+  color: var(--ColorPrimarioTexto);
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 2rem 1rem;
+  text-align: center;
+  color: rgb(249, 255, 255);
+}
+
+.Procedimientos__imagen {
+  width: 40rem;
+  height: 60rem;
+  margin-top: 4rem;
+  padding: 2rem;
+  border-radius: 2rem;
+  background-color: rgb(0, 0, 0);
+
+  box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.75);
+  transition: transform 0.5s;
+  /*para dar efecto escalable*/
+}
+
+.Procedimientos__imagen:hover {
+  transform: scale(1.03);
+  /*para dar efecto escalable*/
+
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.75);
+  transition: transform 0.5s;
+}
+
+.Procedimientos__imagen {
+  width: 40rem;
+  height: 60rem;
+  margin: 4rem 2rem;
+  padding: 2rem;
+  border-radius: 2rem;
+
+  box-shadow: 0px 0px 2px 0.3px rgba(0, 0, 0, 0.75);
+}
+
+.Procedimientos__imagen:hover {
+  box-shadow: 0px 0px 2px 0.3px rgba(0, 0, 0, 0.75);
+}
+
+.Procedimientos__imagen {
+  width: 92%;
+  margin: 1rem auto;
+}
+
+.Procedimientos__imagen {
+  width: 90%;
+  margin: 1rem auto;
+  box-shadow: 0px 0px 2px 0.3px rgba(0, 0, 0, 0.75);
+}
+
+.Procedimientos__imagen:hover {
+  box-shadow: 0px 0px 2px 0.3px rgba(0, 0, 0, 0.75);
+}
+
+.Procedimientos h1 {
+  margin-top: 1rem;
+}
+
+.Procedimientos__imagen p {
+  text-align: center;
+  font-weight: normal;
+  line-height: 1.5;
+  margin: 1.4rem auto;
+}

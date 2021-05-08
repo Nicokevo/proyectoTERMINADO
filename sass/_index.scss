@@ -1,0 +1,183 @@
+//*Mis variables*// 
+$general-font: 'Alegreya',
+serif;
+$general-background-color: rgb(0, 0, 0);
+$general-letter-color: #ffffff;
+$general-background-buttons: rgb(56, 119, 236);
+
+body {
+    background-color: $general-background-color;
+}
+
+h1 {
+
+    font-size: 24px;
+    font-weight: 700;
+}
+
+h2 {
+
+    text-align: center;
+}
+
+.nav-link {
+    display: block;
+    padding: 0.4rem 2rem;
+    font-size: 21px;
+    font-family: Roboto;
+    color: #fdfffd;
+}
+
+a {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.container {
+    text-align: center;
+    font-family: $general-font;
+    color: $general-letter-color;
+    background-color: $general-background-color;
+    max-width: 1200px;
+}
+
+.menubuttons {
+    @include button;
+
+    :hover {
+        background-color: rgb(255, 255, 255);
+        border-radius: 30px;
+        font-size: 20px;
+        font-family: Roboto;
+        color: #000000;
+    }
+
+    a {
+        color: rgb(255, 255, 255);
+    }
+}
+
+.NicoDropdown {
+    margin-left: 5%;
+
+    a {
+        color: rgb(248, 248, 248);
+
+        :hover {
+            background-color: $general-background-buttons;
+        }
+    }
+}
+
+.NicoDropdownItems {
+    :active {
+        background-color: rgb(255, 255, 255);
+    }
+
+    :hover {
+        background-color: $general-background-buttons;
+    }
+
+    a {
+        color: rgb(0, 0, 0);
+
+        :hover {
+            background-color: rgb(0, 0, 0);
+        }
+
+        :active {
+            background-color: black;
+        }
+    }
+}
+
+.menuContainer {
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+
+    ul li {
+        justify-content: space-evenly;
+        align-items: center;
+        flex: 0 0 20%;
+        margin: 0;
+    }
+}
+
+* //carusel//*
+
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+    object-position: center
+}
+
+.SeccionPoliticas,
+.SeccionNosotros {
+    background-color: $general-background-color;
+}
+
+
+
+img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px auto;
+
+    @include telefono {
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    .Secciones {
+        @include flex-row;
+    }
+
+    .SeccionesTexto {
+        @include SeccionesTexto;
+
+        img {
+            width: 95%;
+            height: 90%;
+        }
+    }
+
+
+
+    .NicoCarrusel {
+        align-content: center;
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+        border: 0px;
+    }
+
+    .carouselContainer {
+        padding: 0px;
+        padding-left: 0px;
+    }
+
+    .containerNopadding {
+        padding: 0px;
+        padding-right: 10px;
+
+        h1 {
+            margin: 6rem auto 4rem;
+            letter-spacing: 5px;
+        }
+
+        h2 {
+            letter-spacing: 5px;
+            text-align: center;
+
+            @include telefono {
+                h2 {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

@@ -1,3 +1,9 @@
+@mixin telefono {
+  @media (max-width: #{480px}) {
+    @content;
+  }
+}
+
 @mixin flexrow {
   display: flex;
   flex-direction: row;
@@ -22,24 +28,31 @@
   .SeccionesTexto {
     align-content: justify;
     justify-content: center;
+    margin: 0 auto;
   }
+
   .titaño {
-    font-size: 21px;
+    font-size: 19px;
     font-family: Roboto;
     color: #fdfffd;
+    margin: 0 auto;
   }
+
   .nuestrapolitica {
     font-size: 20px;
     font-family: Roboto;
     color: #fdfffd;
-    padding: 20px;
+    margin: 0 auto;
   }
+
   .TextoQuienesSomos {
     font-size: 18px;
   }
+
   .TextoPoliticas {
     font-size: 18px;
   }
+
   h2 {
     text-align: center;
     flex-wrap: wrap;
