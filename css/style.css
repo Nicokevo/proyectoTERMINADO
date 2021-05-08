@@ -132,6 +132,7 @@ a {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+  margin: 40px auto;
 }
 
 .SeccionPoliticas,
@@ -192,8 +193,8 @@ img {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 45%;
-            flex: 0 0 45%;
+        -ms-flex: 0 0 40%;
+            flex: 0 0 40%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -202,7 +203,7 @@ img {
 }
 
 img {
-  width: 95%;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;

@@ -39,9 +39,22 @@ container-fluid {
   width: auto;
 }
 
+.Procedimientos__imagen img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+
 .Procedimientos_imagenes {
   display: flex;
   justify-content: space-evenly;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  flex-wrap: wrap;
+
 }
 
 .Procedimientos_imagenes {
@@ -57,7 +70,7 @@ container-fluid {
 }
 
 .Procedimientos_imagenes img {
-  width: 100%;
+  width: 50%;
   border-radius: 1rem;
   flex-wrap: wrap
 }
@@ -77,13 +90,13 @@ container-fluid {
 }
 
 .Procedimientos__imagen {
-  width: 40rem;
+  width: 30rem;
   height: 60rem;
   margin-top: 4rem;
   padding: 2rem;
   border-radius: 2rem;
-  background-color: rgb(0, 0, 0);
-
+  background: color #dc143c;
+  ;
   box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.75);
   transition: transform 0.5s;
   /*para dar efecto escalable*/
@@ -105,7 +118,7 @@ container-fluid {
   border-radius: 2rem;
   flex-wrap: wrap;
   box-shadow: 0px 0px 2px 0.3px rgba(0, 0, 0, 0.75);
-
+  display: flex;
 
   .Procedimientos__imagen:hover {
     box-shadow: 0px 0px 2px 0.3px rgba(0, 0, 0, 0.75);
@@ -114,6 +127,7 @@ container-fluid {
   .Procedimientos__imagen {
     width: 92%;
     margin: 1rem auto;
+    display: flex;
   }
 
   .Procedimientos__imagen {
