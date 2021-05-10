@@ -134,8 +134,9 @@ a {
 /* <!-- clases de carrusel- >  */
 
 .carousel-item img {
-  height: 500px;
+  height: 600px;
   margin: 40px auto;
+  width: 100%;
 }
 
 .carouselContainer {
