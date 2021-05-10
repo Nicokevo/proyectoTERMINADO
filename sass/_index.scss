@@ -6,8 +6,8 @@ $general-letter-color: #ffffff;
 $general-background-buttons: rgb(56, 119, 236);
 $telefono:480px;
 
-body {
-    background-color: $general-background-color;
+.body {
+    background: black;
 }
 
 h1 {
@@ -26,6 +26,14 @@ h2 {
 
 }
 
+.container {
+    text-align: center;
+    font-family: $general-font;
+    color: $general-letter-color;
+    background-color: $general-background-color;
+    max-width: 1200px;
+}
+
 .nav-link {
     display: block;
     padding: 15px;
@@ -40,13 +48,7 @@ a {
     background-color: transparent;
 }
 
-.container {
-    text-align: center;
-    font-family: $general-font;
-    color: $general-letter-color;
-    background-color: $general-background-color;
-    max-width: 1200px;
-}
+
 
 .menubuttons {
 
@@ -101,14 +103,13 @@ a {
     width: 100%;
     display: block;
     margin-bottom: 20px;
-    width: 75%;
     margin: 0 auto;
 
     @media screen {
         max-width: 768px;
 
         .menuContainer {
-            width: 95%;
+            width: 100%;
             display: flex;
             justify-content: space-around;
         }
@@ -144,15 +145,22 @@ a {
 
 
 
+//carusel//
 
-* //carusel//*
 
 .carousel-item img {
+
     height: 500px;
-    object-fit: cover;
-    object-position: center;
+
     margin: 40px auto;
+
 }
+
+.carouselContainer {
+    padding: 0px;
+    padding-left: 0px;
+}
+
 
 .SeccionPoliticas,
 .SeccionNosotros {
@@ -166,7 +174,11 @@ img {
     flex-direction: row;
     flex-wrap: wrap;
     margin: 10px auto;
-
+    width: 300px;
+    object-fit: cover;
+    object-position: center;
+    padding: 20px;
+    //         width: 98%;
     // @include telefono {
     //     img {
     //         display: block;
@@ -177,31 +189,17 @@ img {
 
 
 
-.NicoCarrusel {
-    align-content: center;
-    padding: 0px;
-    margin: 0px;
-    width: 100%;
-    border: 0px;
+
+
+
+
+h1 {
+    margin: 6rem auto 4rem;
+    letter-spacing: 5px;
 }
 
-.carouselContainer {
-    padding: 0px;
-    padding-left: 0px;
-}
+h2 {
+    letter-spacing: 5px;
+    text-align: center;
 
-.containerNopadding {
-    padding: 0px;
-    padding-right: 10px;
-
-    h1 {
-        margin: 6rem auto 4rem;
-        letter-spacing: 5px;
-    }
-
-    h2 {
-        letter-spacing: 5px;
-        text-align: center;
-
-    }
 }

@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap");
-body {
-  background-color: black;
+.body {
+  background: black;
 }
 
 h1 {
@@ -13,6 +13,14 @@ h1 {
 h2 {
   text-align: center;
   margin-top: 30px;
+}
+
+.container {
+  text-align: center;
+  font-family: "Alegreya", serif;
+  color: #ffffff;
+  background-color: black;
+  max-width: 1200px;
 }
 
 .nav-link {
@@ -27,14 +35,6 @@ h2 {
 a {
   text-decoration: none;
   background-color: transparent;
-}
-
-.container {
-  text-align: center;
-  font-family: "Alegreya", serif;
-  color: #ffffff;
-  background-color: black;
-  max-width: 1200px;
 }
 
 .menubuttons :hover {
@@ -81,7 +81,6 @@ a {
   width: 100%;
   display: block;
   margin-bottom: 20px;
-  width: 75%;
   margin: 0 auto;
 }
 
@@ -90,7 +89,7 @@ a {
     max-width: 768px;
   }
   .menuContainer .menuContainer {
-    width: 95%;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -125,14 +124,14 @@ a {
   }
 }
 
-*
 .carousel-item img {
   height: 500px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
   margin: 40px auto;
+}
+
+.carouselContainer {
+  padding: 0px;
+  padding-left: 0px;
 }
 
 .SeccionPoliticas,
@@ -151,39 +150,34 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 10px auto;
+  width: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  padding: 20px;
 }
 
-.NicoCarrusel {
-  -ms-flex-line-pack: center;
-      align-content: center;
-  padding: 0px;
-  margin: 0px;
-  width: 100%;
-  border: 0px;
-}
-
-.carouselContainer {
-  padding: 0px;
-  padding-left: 0px;
-}
-
-.containerNopadding {
-  padding: 0px;
-  padding-right: 10px;
-}
-
-.containerNopadding h1 {
+h1 {
   margin: 6rem auto 4rem;
   letter-spacing: 5px;
 }
 
-.containerNopadding h2 {
+h2 {
   letter-spacing: 5px;
   text-align: center;
 }
 
 .secciones {
-  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 @media screen {
@@ -200,14 +194,6 @@ img {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-}
-
-img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
 }
 
 .titaño {
@@ -304,31 +290,18 @@ h2 {
   text-transform: capitalize;
 }
 
-/* .submit-btn {
-        display: inline-block;
-        background-image: linear-gradiente(red, #a72879, #064497);
-        color: #fff;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        font-size: 16px;
-        padding: 8px 16px;
-        border: none;
-        width: 200px;
-        cursor: pointer;
-      } */
 .contact-form .submit-btn {
+  width: 100%;
   display: inline-block;
-  width: 200px;
-  background: #080808;
-  border: 5px solid #000000;
-  border-radius: 40px;
-  color: #fdfdfd;
-  padding: 8px 16px;
-  font-size: 18px;
-  cursor: pointer;
-  margin: 12px 0;
+  background: #dc143ccc;
+  color: black;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  padding: 10px;
+  opacity: 0, 9;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  border: none;
+  border-radius: 10px;
 }
 
 #bloque {
@@ -351,5 +324,6 @@ h2 {
 footer {
   position: relative;
   top: 320px;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 /*# sourceMappingURL=style.css.map */
